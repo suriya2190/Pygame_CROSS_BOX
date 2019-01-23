@@ -1,6 +1,12 @@
 import pygame, time, random
+
+WIDTH = 480
+HEIGHT = 600
 pygame.init()
-window = pygame.display.set_mode((600,600), pygame.FULLSCREEN)
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Tic-tac-toe")
+clock = pygame.time.Clock()
+window = pygame.display.set_mode((600,600))
 font = pygame.font.Font('C:\WINDOWS\Fonts\comic.ttf', 100)
 list_of_coords=[(60+200*m,25+200*n) for m in range(3) for n in range(3)]
 
